@@ -9,6 +9,7 @@ umongo==3.0.1
 validators
 requests
 bs4
+coroutines
 pytz
 shortzy
 python-dotenv==0.21.1
