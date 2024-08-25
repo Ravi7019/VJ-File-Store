@@ -22,7 +22,7 @@ API_ID = int(environ.get("API_ID", "13992749"))
 API_HASH = environ.get("API_HASH", "c8b1a7c3ce9aa1d1eec2fee774d48399")
 BOT_TOKEN = environ.get("BOT_TOKEN", "7148040429:AAFmGATfHVvbEDM7QWYialvFUabWja1zLis")
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/5652f8e7e98ef46289bcb.jpg')).split() # Bot Start Picture
+PICS = (environ.get('PICS', 'https://telegra.ph/file/b658720dec744f0cd5775.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5466885993').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "MOVIE_FILE_STORE_6BOT") # without @
 PORT = environ.get("PORT", "8080")
