@@ -20,11 +20,11 @@ def is_enabled(value, default):
 # Bot Information
 API_ID = int(environ.get("API_ID", "13992749"))
 API_HASH = environ.get("API_HASH", "c8b1a7c3ce9aa1d1eec2fee774d48399")
-BOT_TOKEN = environ.get("BOT_TOKEN", "6610232094:AAE5CEgfQ2B_lRiWSRLUdGOqIa6HNtAFJOU")
+BOT_TOKEN = environ.get("BOT_TOKEN", "7148040429:AAFmGATfHVvbEDM7QWYialvFUabWja1zLis")
 
 PICS = (environ.get('PICS', 'https://telegra.ph/file/5652f8e7e98ef46289bcb.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5466885993').split()]
-BOT_USERNAME = environ.get("BOT_USERNAME", "KCS_MOVIESTORE_BOT") # without @
+BOT_USERNAME = environ.get("BOT_USERNAME", "MOVIE_FILE_STORE_6BOT") # without @
 PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
@@ -42,8 +42,8 @@ DB_NAME = environ.get("DB_NAME", "ravikumar1cn")
 AUTO_DELETE_MODE = bool(environ.get('AUTO_DELETE_MODE', True)) # Set True or False
 
 # If Auto Delete Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-AUTO_DELETE = int(environ.get("AUTO_DELETE", "2")) # Time in Minutes
-AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "120")) # Time in Seconds
+AUTO_DELETE = int(environ.get("AUTO_DELETE", "1")) # Time in Minutes
+AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "50")) # Time in Seconds
 
 # Channel Information
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1001913629397"))
@@ -53,7 +53,7 @@ CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 
 # Enable - True or Disable - False
-PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), False)
+PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), False)
 
 # Verify Info :-
 VERIFY_MODE = bool(environ.get('VERIFY_MODE', False)) # Set True or False
@@ -70,12 +70,12 @@ WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', True)) # Set True or Fal
 WEBSITE_URL = environ.get("WEBSITE_URL", "https://www.kannadaflixmoviez.shop/p/kannadamagaa.html") # For More Information Check Video On Yt - @Tech_VJ
 
 # File Stream Config
-STREAM_MODE = bool(environ.get('STREAM_MODE', False)) # Set True or False
+STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or False
 
 # If Stream Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 MULTI_CLIENT = False
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
-PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
+PING_INTERVAL = int(environ.get("PING_INTERVAL", "50"))  # 1 minutes
 if 'DYNO' in environ:
     ON_HEROKU = True
 else:
